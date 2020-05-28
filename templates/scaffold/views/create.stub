@@ -11,7 +11,7 @@
         <div class="box box-primary">
             <div class="box-body">
                 <div class="row">
-                    {!! Form::open(['route' => '$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.store']) !!}
+                    {!! Form::open(['url' => '$ROUTE_PREFIX$$MODEL_NAME_PLURAL_SNAKE$']) !!}
 
                         @include('$VIEW_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.fields')
 

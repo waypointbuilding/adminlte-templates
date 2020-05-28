@@ -1,9 +1,9 @@
-{!! Form::open(['route' => ['$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.destroy', $id], 'method' => 'delete']) !!}
+{!! Form::open(['url' => "$ROUTE_PREFIX$$MODEL_NAME_PLURAL_SNAKE$/$id", 'method' => 'delete']) !!}
 <div class='btn-group'>
-    <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.show', $id) }}" class='btn btn-default btn-xs'>
+    <a href="/$ROUTE_PREFIX$$MODEL_NAME_PLURAL_SNAKE$/{{$id}}" class='btn btn-default btn-xs'>
         <i class="glyphicon glyphicon-eye-open"></i>
     </a>
-    <a href="{{ route('$ROUTE_NAMED_PREFIX$$MODEL_NAME_PLURAL_SNAKE$.edit', $id) }}" class='btn btn-default btn-xs'>
+    <a href="/$ROUTE_PREFIX$$MODEL_NAME_PLURAL_SNAKE$/{{$id}}/edit" class='btn btn-default btn-xs'>
         <i class="glyphicon glyphicon-edit"></i>
     </a>
     {!! Form::button('<i class="glyphicon glyphicon-trash"></i>', [
